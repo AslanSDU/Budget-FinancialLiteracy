@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- English version -->
+    <string name="app_name">Budget &amp; Financial literacy</string>
+    <string name="short_name">B&amp;FL</string>
+    <string name="literacy">Literacy</string>
+    <string name="budget">Budget</string>
+    <string name="account">Account</string>
+    <string name="income">Income</string>
+    <string name="spending">Spending</string>
+    <string name="ok">OK</string>
+    <string name="enter_hint">Enter amount</string>
+    <string name="currency">Currency</string>
+    <string name="language">Language</string>
+    <string name="settings">Settings</string>
+    <string name="by">Sort by</string>
+
+    <!-- Russian version -->
+    <string name="app_name_ru">Бюджет и Финансовая грамотность</string>
+    <string name="short_name_ru">БиФГ</string>
+    <string name="literacy_ru">Грамотность</string>
+    <string name="budget_ru">Бюджет</string>
+    <string name="account_ru">Счёт</string>
+    <string name="income_ru">Доход</string>
+    <string name="spending_ru">Расходы</string>
+    <string name="ok_ru">OK</string>
+    <string name="enter_hint_ru">Введите сумму</string>
+    <string name="currency_ru">Валюта</string>
+    <string name="language_ru">Язык</string>
+    <string name="settings_ru">Настройки</string>
+    <string name="by_ru">Сортировать по</string>
+
+    <!-- Kazakh version -->
+    <string name="app_name_kz">Бюджет және Қаржылық сауаттылық</string>
+    <string name="short_name_kz">БжҚС</string>
+    <string name="literacy_kz">Сауаттылық</string>
+    <string name="budget_kz">Бюджет</string>
+    <string name="account_kz">Шот</string>
+    <string name="income_kz">Кіріс</string>
+    <string name="spending_kz">Шығыс</string>
+    <string name="ok_kz">OK</string>
+    <string name="enter_hint_kz">Сомасын енгізіңіз</string>
+    <string name="currency_kz">Валюта</string>
+    <string name="language_kz">Тіл</string>
+    <string name="settings_kz">Баптаулары</string>
+    <string name="by_kz">Реттеу амалы</string>
+
+</resources>

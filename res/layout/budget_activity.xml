@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Spinner
+            android:id="@+id/budget_activity_by"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/remaining_back"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/budget_activity_account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/budget_activity_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/budget_activity_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 KZT"
+                android:textColor="#555555"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/income_back"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/budget_activity_incoming_money_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/income"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/budget_activity_incoming_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 KZT"
+                    android:textColor="#555555"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/income_salary"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/salary" />
+
+                    <Button
+                        android:id="@+id/income_persent"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/percent" />
+
+                    <Button
+                        android:id="@+id/income_portfolio"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/portfolio" />
+
+                    <Button
+                        android:id="@+id/income_other"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/other" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spending_back"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/budget_activity_spending_money_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spending"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/budget_activity_spending_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 KZT"
+                    android:textColor="#555555"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/spending_benzin"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/benzin" />
+
+                    <Button
+                        android:id="@+id/spending_communication"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/communication" />
+
+                    <Button
+                        android:id="@+id/spending_debt"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/debt" />
+
+                    <Button
+                        android:id="@+id/spending_dom"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/dom" />
+
+                    <Button
+                        android:id="@+id/spending_fitness"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/fitness" />
+
+                    <Button
+                        android:id="@+id/spending_fly"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/fly" />
+
+                    <Button
+                        android:id="@+id/spending_food"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/food" />
+
+                    <Button
+                        android:id="@+id/spending_for_people"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/for_people" />
+
+                    <Button
+                        android:id="@+id/spending_household_appliances"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/household_appliances" />
+
+                    <Button
+                        android:id="@+id/spending_med"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/med" />
+
+                    <Button
+                        android:id="@+id/spending_media"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/media" />
+
+                    <Button
+                        android:id="@+id/spending_public_services"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/public_services" />
+
+                    <Button
+                        android:id="@+id/spending_shop"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/shop" />
+
+                    <Button
+                        android:id="@+id/spending_shops"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/shops" />
+
+                    <Button
+                        android:id="@+id/spending_transport"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/transport" />
+
+                    <Button
+                        android:id="@+id/spending_other"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/other" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
